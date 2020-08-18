@@ -11,10 +11,11 @@
   <div class="container">
     <div class="jumbotron">
       <h2>Stress Survey</h2>
+      <p>Please check all that apply.</p>
     </div>
     <form id="stress_survey">
       <div class="form-group">
-        <p>Please check all that apply:</p>
+        <p>Warning Signs:</p>
         <input type="checkbox" name="warning-signs" value="lossSleep"> Loss of sleep.<br>
         <input type="checkbox" name="warning-signs" value="aches&Pains"> Aches and pains.<br>
         <input type="checkbox" name="warning-signs" value="diarConst"> Diarrhea or constipation.<br>
@@ -55,9 +56,15 @@
       <button type="submit">Submit Survey</button>
     </form>
     
-    <span id="work-responses">
-      <p><b>You use the following methods of transportation to travel to work or school:</b></p>
-    </span>
+    <div id="low-risk">
+      <p>You are doing pretty good.</p>
+    </div>
+    <div id="medium-risk">
+      <p>You are at a medium risk.</p>
+    </div>
+    <div id="high-risk">
+      <p>You are at a high risk, go to a hospital.</p>
+    </div>
   </div>
 </body>
 </html>
